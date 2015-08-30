@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>js-test</title>
+
+        <link type="text/css" rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="headerBar">
+                <i class="fa fa-bar-chart fa-3x"></i>
+                <h1>Stocks</h1>
+                <div class="input">
+                    <form>
+                        <input type="text" class="search-input" placeholder="Enter a company name, ex: Netflix"/>
+                        <i class="fa fa-plus-circle fa-2x"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="main">
+                <div id="errors"></div>
+                <div>
+                <table id="dataTable" style="width:100%"></table>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./vendor/jquery/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="./Elements.js"></script>
+        <script type="text/javascript" src="./Functions.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+        <script type="text/javascript">
+            App.displayData();
+        </script>
+    </body>
+</html>
