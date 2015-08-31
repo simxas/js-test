@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* Layout Medium Screens */
+.input {
+    position: absolute;
+    float: left;
+    top: 10px;
+    left: 30%;
+}
+.search-input {
+    width: 150px;
+}

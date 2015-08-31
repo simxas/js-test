@@ -7,26 +7,41 @@
 
         <link type="text/css" rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./screen_layout_large.css" />
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="./screen_layout_small.css" />
+        <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="./screen_layout_medium.css" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <div class="wrapper">
-            <div class="headerBar">
+
+        <div class="page">
+
+            <header>
+
                 <i class="fa fa-bar-chart fa-3x"></i>
-                <h1>Stocks</h1>
+
                 <div class="input">
                     <form>
                         <input type="text" class="search-input" placeholder="Enter a company name, ex: Netflix"/>
                         <i class="fa fa-plus-circle fa-2x"></i>
                     </form>
                 </div>
-            </div>
-            <div class="main">
+
+                <h1>Stocks</h1>
+
+            </header>
+
+            <div class="main_container">
                 <div id="errors"></div>
-                <div>
                 <table id="dataTable" style="width:100%"></table>
-                </div>
             </div>
-        </div>
+            <footer>
+                &copy; Your Organization Name
+            </footer>
+        </div><!-- end of page class -->
+
 
         <script type="text/javascript" src="./vendor/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="./Elements.js"></script>

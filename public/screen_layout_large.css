@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Layout (global rules for all sizes) */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout Large Screens (default for older browsers) */
+header {
+    height: 100px;
+}
+.fa-bar-chart {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 30px;
+}
+
+header h1 {
+    position: relative;
+    float: right;
+    top: 35px;
+    right: 30px;
+}
+
+.input {
+    position: absolute;
+    float: left;
+    top: 10px;
+    left: 30%;
+}
+.search-input {
+    width: 300px;
+}
+.fa-plus-circle {
+    position: relative;
+    top: 5px;
+}
+
+@media screen and (max-width: 990px) {
+    footer { padding-left: 20px; }
+}

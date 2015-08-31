@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Layout Small Screens */
+.input {
+    position: absolute;
+    float: left;
+    top: 50px;
+    left: 10%;
+}
+.search-input {
+    width: 280px;
+}
+.fa-plus-circle {
+    position: relative;
+    top: 5px;
+    right: 10px;
+}

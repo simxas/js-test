@@ -1,37 +1,38 @@
-html {
-    overflow-y: scroll;
-}
+@charset "UTF-8";
+
+/* Global Content Formatting and Styles */
 body {
-    font-size: 13px;
-    font-family: Arial, helvetica, sans-serif;
+    color: #575c7a;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #515673;
+}
+
+header {
+    height: 100px;
+}
+
+.page {
+    max-width: 980px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    background-color: #fff;
 }
 
 h1 {
-    float: right;
-    margin-top: 0px;
-    padding: 10px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0 0 .5em 0;
 }
 
-.headerBar {
-    height: 50px;
-    background: hsl(182, 15%, 85%);
-    border: 1px solid #CCC;
-    width: 70%;
-    margin: auto 15%;
+footer {
+    font-size: .85em;
+    color: #9ba0bd;
+    background-color: #515673;
+    padding: 10px 10px 10px 0;
 }
 
-.search-input {
-    width: 60%;
-    float: left;
-    margin-left: 20%;
-    margin-top: 20px;
-}
-
-.main {
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 60px;
-}
 
 /*===========================*/
 /*table*/
@@ -58,9 +59,6 @@ td:nth-child(3) { background: hsl(182, 35%, 85%); }
 /*===========================*/
 /*fa icons*/
 /*===========================*/
-.fa-bar-chart {
-    padding: 10px;
-}
 
 .fa-plus-circle {
     padding: 15px;
