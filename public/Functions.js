@@ -13,7 +13,7 @@ var Functions = (function () {
                     if (data.hasOwnProperty(key)) {
                         //checking for duplicates
                         if ($.inArray(data[key].Symbol, Elements.tempArray) > -1) {
-                            warningDuplicate();
+                            // warningDuplicate();
                             continue
                         } else {
                             $.getJSON('Api/v2/Quote/json', {symbol: data[key].Symbol}, function (quote) {
@@ -92,6 +92,7 @@ var Functions = (function () {
         warningEmpty: warningEmpty,
         warningNoData: warningNoData,
         deleteTableRow: deleteTableRow,
+        warningDuplicate: warningDuplicate
     };
 
 })();
